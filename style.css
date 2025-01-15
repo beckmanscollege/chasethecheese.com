@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Start Screen */
+#start-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/STARTMOUSE.png?v=1736898724558') no-repeat center center/cover; /* Replace with your image */
+  color: orange;
+  text-align: center;
+  font-size: 1.0em; /* Reduced font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#start-screen h1, #start-screen p, #start-screen h2, #start-screen h3, #start-screen h4 {
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+#game {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 2px solid #000;
+  background-color: #f7f7e8;
+  overflow: hidden;
+  cursor: none; /* Hides the mouse cursor */
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#mouse, #cat, #cheese {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+}
+
+#mouse {
+  position: absolute;
+  width: 120px; /* Adjust size as needed */
+  height: 120px;
+  background: url("https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/mr1.gif?v=1736887514972") no-repeat center/contain; /* Replace with your GIF */
+  pointer-events: none; /* Prevent interference with clicking */
+  transform: translate(-50%, -50%); /* Center the GIF */
+}
+
+#cat {
+  background: url("https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/fatcatwithahat.gif?v=1736887679470") no-repeat center/contain;
+  width: 160px;
+  height: 160px;
+}
+
+#cheese {
+  background: url("https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/bill1.gif?v=1736887671488") no-repeat center/contain;
+  display: none; /* Hidden initially */
+}
+
+/* Game Over Screen */
+#game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/catfatmaxtax.png?v=1736890545072") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#game-over h1 {
+  font-size: 48px;
+  color: red;
+}
+
+#game-over h2 {
+  font-size: 32px;
+}
+
+/* Link Styles */
+#link {
+  position: fixed;
+  bottom: 20px; /* 20px from the bottom of the page */
+  right: 20px;  /* 20px from the right of the page */
+  font-size: 16px; /* Font size of the link */
+  color: orange; /* Color of the text */
+  font-weight: bold; /* Make the link bold */
+  text-decoration: none; /* Remove underline */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the link */
+#link:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+}
