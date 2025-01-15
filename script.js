@@ -82,7 +82,7 @@ function update() {
   lastMouseX = mouseX;
 
   // Move cat toward the mouse
-  const catSpeed = 2;
+  const catSpeed = 9;
   const dx = mouseX - catX;
   const dy = mouseY - catY;
   const distance = Math.sqrt(dx * dx + dy * dy);
@@ -109,9 +109,9 @@ function update() {
   const cheeseY = parseInt(cheese.style.top);
   if (
     mouseX > cheeseX &&
-    mouseX < cheeseX + 50 &&
+    mouseX < cheeseX + 100 &&
     mouseY > cheeseY &&
-    mouseY < cheeseY + 50
+    mouseY < cheeseY + 100
   ) {
     collectCheese();
   }
@@ -164,8 +164,8 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// Start the game when the screen is touched (anywhere on the start screen)
-document.getElementById("start-screen").addEventListener("touchstart", (e) => {
+// Start the game when the screen is touched (on touchscreen)
+document.addEventListener("touchstart", (e) => {
   e.preventDefault(); // Prevent default touch action (like scrolling)
   if (!gameRunning) {
     startGame(); // Start the game
@@ -178,4 +178,6 @@ document.getElementById("start-screen").addEventListener("touchstart", (e) => {
 showStartScreen();
 
 bgMusic.playbackRate = 2.0;
+
+
 
