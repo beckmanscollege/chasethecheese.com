@@ -164,13 +164,14 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// Start the game when the screen is touched (on touchscreen)
-document.addEventListener("touchstart", (e) => {
+// Start the game when the screen is touched (anywhere on the start screen)
+document.getElementById("start-screen").addEventListener("touchstart", (e) => {
   e.preventDefault(); // Prevent default touch action (like scrolling)
   if (!gameRunning) {
     startGame(); // Start the game
   }
 });
+
 
 
 // Show the start screen initially
