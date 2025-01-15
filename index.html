@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHASETHECHEESE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <h1>YOU ARE A MOUSE</h1>
+    <h2>YOUR JOB IS TO COLLECT CHEESE</h2>
+    <h3>YOU DONT EVEN LIKE CHEESE</h3>
+    <h4>BUT CHEESE IS ALL THERE IS</h4>
+    <p>or so you think</p>
+    <h2>PRESS SPACE TO START</h2>
+    <h3>INSTRUCTIONS:</h3>
+    <p>USE MOUSE TO CONTROL MOUSE</p>
+    <p>COLLECT CHEESE</p>
+    <p>AVOID THE FAT CAT</p>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game">
+    <div id="score">CHEESE: 0</div>
+    <div id="mouse"></div>
+    <div id="cat"></div>
+    <div id="cheese"></div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="game-over">
+    <h1>ALL YO CHEESE NOW BELONGS TO FAT TAX CAT MAX</h1>
+    <h2>he probs gonna use it to bomb children</h2>
+    <h3>CHEESE: <span id="final-score">0</span></h3>
+    <p>PRESS SPACE TO RETURN TO RAT- I MEAN MOUSE RACE</p>
+    <a id="link" href="https://example.com" target="_blank">ESC THE LOOP</a> <!-- Replace 'https://example.com' with your actual link -->
+
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/Blowing%20in%20the%20Wind%20%5BInstrumental%5D-Glen%20Campbell.mp3?v=1736902011745" type="audio/mpeg">
+  </audio>
+
+  <!-- Cheese Collection Sound -->
+  <audio id="cheese-sound">
+    <source src="https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/heavy-om-nom-nom.mp3?v=1736902766937" type="audio/mpeg">
+  </audio>
+
+  <!-- Start Sound -->
+  <audio id="start-sound">
+    <source src="https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/okayyy-lets-go.mp3?v=1736906373058" type="audio/mpeg">
+  </audio>
+
+  <!-- Game Over Sound -->
+  <audio id="lose-sound">
+    <source src="https://cdn.glitch.global/e0126cf0-4f02-4eb6-a4bb-1ccc69db105e/minecraft-death-sound-effect.mp3?v=1736903260660" type="audio/mpeg">
+  </audio>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  
+  <a id="link" href="https://example.com" target="_blank">ESC THE LOOP</a> <!-- Replace 'https://example.com' with your actual link -->
+
+  
+</body>
+</html>
