@@ -49,6 +49,7 @@ body {
   left: 10px;
   font-size: 24px;
   font-weight: bold;
+  color: orange
 }
 
 #mouse, #cat, #cheese {
@@ -123,4 +124,41 @@ body {
 /* Hover effect for the link */
 #link:hover {
   background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
+}
+
+/* För mobiler */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* För surfplattor */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* För datorer */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
 }
