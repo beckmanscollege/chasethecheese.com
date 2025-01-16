@@ -82,7 +82,7 @@ function update() {
   lastMouseX = mouseX;
 
   // Move cat toward the mouse
-  const catSpeed = 7;
+  const catSpeed = 6;
   const dx = mouseX - catX;
   const dy = mouseY - catY;
   const distance = Math.sqrt(dx * dx + dy * dy);
